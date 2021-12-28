@@ -6,7 +6,7 @@ final class Homepagecontroller
     {
         $O_homepage =  new Homepage();
 
-        Vue::montrer('acceuil/homepage', array('homepage' =>  $O_homepage->donneMessage()));
+        Vue::montrer('accueil/homepage', array('homepage' =>  $O_homepage->donneMessage()));
     }
 
 
