@@ -11,7 +11,6 @@
   --red: #DD4A48;
   --blue: #97BFB4;
   --back: #F5EEDC;
-
 }
 
 html{
@@ -23,7 +22,7 @@ body{
   margin: 30px;
 }
 
-h1{
+titre-accueil h1{
   font-size: 750%;
   color: var(--blue);
   text-align: center;
@@ -46,6 +45,7 @@ nav{
   top:50px;
   text-align:center;
 }
+
 nav a{
   font-weight:500;
   text-transform:uppercase;
@@ -54,8 +54,7 @@ nav a{
   margin:0 15px;
   font-size:110%;
   letter-spacing:1px;
-  position:relative;
-  display:inline-block;
+
 }
 nav a:before{
   content:'';
@@ -69,6 +68,13 @@ nav a:before{
 nav a:hover:before{
   animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 
+}
+
+nav li {
+  list-style: none;
+  position:relative;
+  display:inline-block;
+  
 }
 @keyframes in{
   0%{
@@ -123,63 +129,59 @@ label, #toggle
 
     nav .menu 
     {
-        display: none;
-        flex-direction: column;
-        background: var(--back);
-        padding: 15px;
+      display: none;
+      flex-direction: column;
+      background: var(--back);
+      padding: 15px;        
     }
  
     nav .menu a {
-        width: 50%;
-        
+      width: 50%;
+      list-style-type: none;
     }
  
     label 
     {
-        width: 60px;
-        display: flex;
-        flex-direction: row; 
-        justify-content: right;
-        margin: 0 auto;
-        font-size: 40px;
-        color: var(--burgrundy);
-        cursor: pointer;
+      width: 60px;
+      display: flex;
+      flex-direction: row; 
+      justify-content: right;
+      margin: 0 auto;
+      font-size: 40px;
+      color: var(--burgrundy);
+      cursor: pointer;
     }
 
     #toggle:checked + .menu {
-        display: flex;
-        position: relative;
-        gap: 20px;
+      display: flex;
+      position: relative;
+      gap: 20px;
     }
 } 
 
-/* Article */
-
-.annonces{
- background-color: var(--back);
-}
-
-.annonces h3{
-  padding: 20px;
-  text-align: center;
-}
-
-.annonce{
-  margin: 20px;
-  padding: 10px;
-}
 
 /* FOOTER */
 
-
 .footer{
-  background-color: var(--background);
-  padding: 10px 10px 5px;
-  margin: 0;
+  background: #232222;
+  width: 100%; 
+  padding: 20px 0;
   position: absolute;
   left: 0;
-  width: 100%;  
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  color:white;
+}
+
+.footer-center{
+  margin: auto 120px;
+  padding: auto;
+  color:white;
+}
+
 
 .footer span{
   margin-right: 1rem;
@@ -188,18 +190,13 @@ label, #toggle
 .footer-center a:link,
 .footer-center a:visited{
   display: block;
-  color: var(--darkgrey);
+  color: white;
   font-size: 15px;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 
 .footer-center a:hover{
-  color: var(--darkgrey);
-}
-
-.footer-center div{
-  font-size: 15px;
-  color: var(--darkgrey);
+  color: red;
 }
 
 .footer-center h3{
@@ -211,9 +208,11 @@ label, #toggle
 /* DEBUT DU COPYRIGHT */
 
 .copyright{
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-    padding: 4rem 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding: 4rem 0 0;
+  color: white;
 }
+
 /* FIN DU COPYRIGHT */

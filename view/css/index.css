@@ -1,0 +1,42 @@
+:root{
+  --darkblue: #3d5a80;
+  --salmon: #FFBC97;
+  --yellow: #FFE300;
+  --orange: #FF7800;
+  --darkgrey: #293241;
+  --background: #F7F7F7;
+  --white : #ffffff;
+
+  --burgrundy: #4F091D;
+  --red: #DD4A48;
+  --blue: #97BFB4;
+  --back: #F5EEDC;
+}
+
+/* Article */
+
+.annonces{
+ background-color: var(--back);
+}
+
+.annonces h3{
+  padding: 20px;
+  text-align: center;
+}
+
+.annonce{
+  margin: 20px;
+  padding: 10px;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-center{
+  margin: auto 120px;
+  padding: auto;
+
+}
