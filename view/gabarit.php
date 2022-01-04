@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;800&display=swap" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="view\css\index.css" rel="stylesheet" type="text/css"/>
+    <link href="view\css\style.css" rel="stylesheet" type="text/css"/>
   </head>
 
     <body>

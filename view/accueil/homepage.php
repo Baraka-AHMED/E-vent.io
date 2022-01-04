@@ -1,18 +1,10 @@
-<?php
-  if(session_status() == PHP_SESSION_NONE){
-    session_start();
-  }
-  
-  $indexaddr = 'index.php';
-  $aboutaddr = 'about.php';
-?>
+
 
   <head>
     <link href="view\css\style.css" rel="stylesheet" type="text/css"/>
     <link href="view\css\index.css" rel="stylesheet" type="text/css"/>
   </head>
   
-  <body>
    
     <div class="titre-accueil">
       <h1>E-Event . IO !</h1>
@@ -34,6 +26,4 @@
       </article>
     </article>
     <script src="script.js"></script>
-  </body>
 
-</html>

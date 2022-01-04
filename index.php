@@ -19,3 +19,5 @@
 
    // On affiche le contenu dans la partie body du gabarit général
     Vue::montrer('gabarit', array('body' => $contenuPourAffichage)); 
+
+    
