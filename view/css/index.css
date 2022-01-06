@@ -13,95 +13,67 @@
   --back: #F5EEDC;
 }
 
-/* FORMULAIRE */
+/* ---FORMULAIRE --- */
 
 #container{
-  width:400px;
-  margin:0 auto;
-  margin-top:10%;
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
 }
 
 /* Bordered form */
 
 .option{
-margin: 15px;
+  margin: 15px;
 }
 
 form {
-text-align: center;
-width:60%;
-padding: 30px;
-border: 1px solid #f1f1f1;
-background: #fff;
-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+  width:60%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 #container h1{
-  width: 38%;
-  margin: 0 auto;
-  padding-bottom: 10px;
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 
 
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 
 /* Set a style for all buttons */
 
 input[type=submit] {
-background-color: var(--blue);;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
+  background-color: var(--blue);;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 input[type=submit]:hover {
-background-color: white;
-color: var(--blue);
-border: 1px solid var(--blue);
+  background-color: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
-/* ARTICLE */
+/* --- CONTACT --- */
 
-.annonces{
- background-color: var(--back);
-}
-
-.annonces h3{
-  padding: 20px;
-  text-align: center;
-}
-
-.annonce{
-  margin: 20px;
-  padding: 10px;
-}
-
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-center{
-  margin: auto 120px;
-  padding: auto;
-
-}
-
-/* CONTACT */
-
-.wesh h1{
+.titre h1{
   margin-left: 20%;
   
 }
@@ -119,7 +91,7 @@ border: 1px solid var(--blue);
   border: none;
 }
 
-#Prénom{
+#Prenom{
   padding: 1% 10% 1% 1%;
   background-color: #e0e4ce;
   border: none;
@@ -154,6 +126,7 @@ border: 1px solid var(--blue);
   padding: 2% 5% 2% 5%;
   margin-top: 2%;
   margin-left: 5%;
+  margin-bottom: 5%;
   cursor: pointer;
 
   
@@ -165,9 +138,12 @@ border: 1px solid var(--blue);
   top: -25%;
   position: absolute;
   
+  
+
+  
 }
 
-/* CONNEXION */
+/* --- CONNEXION --- */
 
 .Connex {
   display: flex;
@@ -175,7 +151,7 @@ border: 1px solid var(--blue);
   width: 100%;
   height: 700px;
   flex-grow:1;
-  margin: 30px 0
+  margin: 30px 0;
 
 }
 
@@ -222,12 +198,219 @@ border: 1px solid var(--blue);
   margin-left: 80px;
 }
 
-.formulaire{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  height: 328px;
+/* --- ANNONCES ---  */
+
+h1{
+  font-size: 200%;
+  color: var(--burgrundy);
+  text-align: center;
 }
 
+/* Bordered form */
+
+.option{
+  margin: 15px;
+}
+
+form {
+  text-align: center;
+  margin-top: 50px;
+  width: 95%;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+input[type=submit] {
+  background-color: #689D71;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: #689D71;
+  border: 1px solid #689D71;
+}
+
+/* --- COMPTE --- */
+
+.compte{
+  width: 100%;
+  height: 500px;
+}
+
+/* ARTICLE */
+
+.compteur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown{
+  width: 40%;
+  height: 100px;
+}
+
+.annonces{
+ background-color: var(--back);
+}
+
+.annonces h3{
+  padding: 20px;
+  text-align: center;
+}
+
+.annonces{
+  /*width: 100%;*/
+  margin: 30px;
+  height: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slide{
+  width: 500%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.annonce1, .annonce p, h5{
+  font-size: 30px;
+}
+
+.annonce {
+  width: 20%;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.boutons{
+  display: none;
+}
+
+
+.bouton{
+  position: absolute;
+  width: 99%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.manual-btn{
+  border: 2px solid #293241;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #712E1E;
+}
+
+#btn1:checked ~ .first{
+  margin-left: 0;
+}
+
+#btn2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#btn3:checked ~ .first{
+  margin-left: -40%;
+}
+
+.idee{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.idee a{
+  color :#712E1E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.idee a:hover{
+  color :#293241;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-center{
+  margin: auto 120px;
+  padding: auto;
+
+}
+
+/* COUNTDOWN */
+
+.countdown{
+  display: block;
+  margin: 20px;
+  border-radius:10px;
+
+}
+
+/* STYLE DU BOUTON DE PROPOSITION */
+
+.btn{
+  position: relative;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5rem;
+  padding: 1.3rem 5rem;
+  color: var(--blanche);
+  font-size: 12px;
+  box-shadow: 0 0.5rem 1rem var(--burgrundy);
+  margin-top: 4rem;
+  height: 10%;
+  width: 10%;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 

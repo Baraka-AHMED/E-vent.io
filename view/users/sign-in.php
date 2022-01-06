@@ -1,6 +1,6 @@
 
  <section class = "Connex">
-      <img src="img/image_connexion.png" class="img_conx" alt="img conx">
+      <img src="view\img\image_connexion.png" class="img_conx" alt="img conx">
       
       <?php if (!empty($erreurs)): ?>
         <div class = "erreur">

@@ -1,7 +1,7 @@
 <?php
 // Ce fichier est le point d'entrée de votre application
 
-    require 'Noyau/ChargementAuto.php';
+    require 'noyau/ChargementAuto.php';
     /*
      url pour notre premier test MVC Hello World,
      nous n'avons pas d'action précisée on visera celle par défaut

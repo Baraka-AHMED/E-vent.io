@@ -13,7 +13,7 @@
   </head>
 
     <body>
-        <?php Vue::montrer('standard/entete'); ?>
+        <?php Vue::montrer('standard/header'); ?>
         <?php echo $A_vue['body'] ?>
         <?php Vue::montrer('standard/footer'); ?>
     </body>
