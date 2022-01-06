@@ -36,9 +36,6 @@
       </div>
     </article>
     <div class="idee">
-      
-        <button class="btn" type="button" <a href="annonce.php">Proposez votre idée </a></button>
-      
+      <a href="index.php?ctrl=annonce&action=annonce"><button class="btn" type="button">Proposez votre idée !</button></a>
     </div>  
     <script src="script.js"></script>
-

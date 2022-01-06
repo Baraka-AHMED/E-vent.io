@@ -31,6 +31,11 @@ final class ChargementAuto
 
         return static::_charger($S_fichier);
     }
+   /* public static function chargerClassesRouteur ($S_nomDeClasse)
+    {
+      $S_fichier = Constantes::chargerClassesRouteur()."$S_nomDeClasse.php";
+      return static::_charger($S_fichier);
+    }*/
     private static function _charger ($S_fichierACharger)
     {
         if (is_readable($S_fichierACharger))
@@ -45,3 +50,4 @@ spl_autoload_register('ChargementAuto::chargerClassesNoyau');
 spl_autoload_register('ChargementAuto::chargerClassesModele');
 spl_autoload_register('ChargementAuto::chargerClassesVue');
 spl_autoload_register('ChargementAuto::chargerClassesControleur');
+//spl_autoload_register('ChargementAuto::chargerClassesRouteur');

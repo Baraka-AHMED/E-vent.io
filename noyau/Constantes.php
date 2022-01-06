@@ -14,6 +14,8 @@ final class Constantes
     const REPERTOIRE_NOYAU       = '/noyau/';
 
     const REPERTOIRE_CONTROLEURS = '/controller/';
+   
+    const REPERTOIRE_ROUTEUR = '/routeur/';
 
 
     public static function repertoireRacine() {
@@ -35,6 +37,8 @@ final class Constantes
     public static function repertoireControleurs() {
         return self::repertoireRacine() . self::REPERTOIRE_CONTROLEURS;
     }
-
+/*public static function repertoireRouteur(){
+  return self::repertoireRacine().self::REPERTOIRE_ROUTEUR;
+}*/
 
 }
