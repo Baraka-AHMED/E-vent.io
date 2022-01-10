@@ -4,8 +4,7 @@ final class Mdpoubliecontroller
 {
     public function MdpoublieAction()
     {
-
-        Vue::montrer('users/mdpoublie');
+       Vue::montrer('users/mdpoublie');
     }
 
 }

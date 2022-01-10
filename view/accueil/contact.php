@@ -14,7 +14,6 @@
       <input type="text"  placeholder="message"><br>
       <input type="submit" id="button" value="envoyer">
     </div>
-    
     <div>
       <img src="view/img/image_contact.png" id="imagee">
     </div>

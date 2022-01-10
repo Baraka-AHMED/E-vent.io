@@ -2,6 +2,10 @@
 <div class="titre-accueil">
       <h1>E-Event . IO !</h1>
       <p><b>Bienvenue sur E-Event.IO! Le meilleur site de gestion d’idéations d’événements.</b></p>
+      <?php 
+      var_dump($_SESSION['auth']);
+
+              ?>
     </div>
     <article class="annonces">
         <h3>Propositions d'évènements</h3>
