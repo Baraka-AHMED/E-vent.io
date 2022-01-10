@@ -16,7 +16,7 @@ final class Controleur
 
         if (empty($S_action)) {
             // L'action est vide ! On la valorise par défaut
-            $this->_A_urlDecortique['action'] = 'defautAction';
+            $this->_A_urlDecortique['action'] = 'DefautAction';
         } else {
             // On part du principe que toutes nos actions sont suffixées par 'Action'...à nous de le rajouter
             $this->_A_urlDecortique['action']  = $S_action . 'Action';
@@ -32,4 +32,4 @@ final class Controleur
             $this->_A_urlDecortique['action']), array());
 
     }
-}
+}?>

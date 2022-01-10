@@ -37,8 +37,8 @@ final class Constantes
     public static function repertoireControleurs() {
         return self::repertoireRacine() . self::REPERTOIRE_CONTROLEURS;
     }
-/*public static function repertoireRouteur(){
+    public static function repertoireRouteur(){
   return self::repertoireRacine().self::REPERTOIRE_ROUTEUR;
-}*/
+}
 
 }

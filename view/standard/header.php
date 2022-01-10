@@ -1,4 +1,7 @@
 <?php 
+
+Connexioncontroller::SessionAction();
+
 echo'<header>
   <nav>
     <label for="toggle">☰</label>
@@ -9,8 +12,8 @@ echo'<header>
 
 <?php
   if (isset($_SESSION['auth'])):
-    echo'<li> <a href="compte.php">Compte</a></li>
-         <li> <a href="deconnexion.php">Déconnexion</a></li>'
+    echo'<li> <a href="index.php?ctrl=compte&   action=Compte">Compte</a></li>
+         <li> <a href="index.php?ctrl=deconnexion&action=logout">Déconnexion</a></li>'
          ?> 
   <?php else:
     echo'<li> <a href="index.php?ctrl=user&action=signin">Connexion</a></li>' ?>

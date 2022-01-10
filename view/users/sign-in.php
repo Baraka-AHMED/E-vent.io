@@ -14,7 +14,7 @@
 
     
       <div id= "connexion">
-        <form action="index.php?crtl=homepage&action=Connexion"           method="POST">
+        <form action="index.php?ctrl=connexion&action=connexion"           method="POST">
           <h2>Connectez-vous</h2>
           <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
           <input type="password" placeholder="Entrer le mot de passe" name="password" required>
