@@ -10,11 +10,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="view\css\index.css" rel="stylesheet" type="text/css"/>
     <link href="view\css\style.css" rel="stylesheet" type="text/css"/>
+    <script src="/view/js/script.js"></script>
   </head>
 
     <body>
-        <?php Vue::montrer('standard/header'); ?>
-        <?php echo $A_vue['body'] ?>
+        <?php 
+        
+        
+        Vue::montrer('standard/header'); ?>
+        <?php echo $A_vue['body']; ?>
         <?php Vue::montrer('standard/footer'); ?>
     </body>
 </html>

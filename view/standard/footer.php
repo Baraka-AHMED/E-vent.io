@@ -1,6 +1,6 @@
 <?php
 
-echo '<footer class="footer">
+echo '<footer>
   <div class="footer-container">
     <div class="footer-center">
       <h3>Aide & Information</h3>

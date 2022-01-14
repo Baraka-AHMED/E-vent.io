@@ -1,235 +1,390 @@
 :root{
-  --darkblue: #3d5a80;
   --salmon: #FFBC97;
-  --yellow: #FFE300;
-  --orange: #FF7800;
-  --darkgrey: #293241;
-  --background: #F7F7F7;
   --white : #ffffff;
-
-  --burgrundy: #712E1E;
-  --red: #712E1E;
-  --blue: #888870;
+  --burgrundy: #03404c;
+  --blue: #3d6f7e;
   --back: #FFD5AF;
+  --formwidth: 400px;
 }
 
-html,body {
-  background-color: var(--white);
-  font-family: 'Work Sans', sans-serif;
-  /*margin: 30px;*/
-  overflow-x: hidden; /*B*/
-  margin : 0; /*B*/
-  padding : 0; /*B*/
+#titre-accueil p {
+  text-align: center;
 }
 
-.titre-accueil p {
-  margin: 0 0 0 30px;
-}
-.titre-accueil h1{
+#titre-accueil h1{
   font-size: 96px; /*B*/
+  color: var(--burgrundy);
+  margin: 10%;
+}
+
+
+/* ---FORMULAIRE --- */
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+/* Bordered form */
+
+option{
+  margin: 15px;
+
+}
+
+/*#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}*/
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=number], input[type=button], select {
+    width: var(--formwidth);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+/* Set a style for all buttons */
+
+input[type=submit] {
+  background-color: var(--blue);;
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: var(--formwidth);
+}
+
+input[type=submit]:hover {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+/* --- CONTACT --- */
+
+
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/*.contact input {
+  padding: 1% 10% 1% 1%;
+  background-color: #e0e4ce;
+  margin-bottom: 0.25%;
+  border: none;
+}
+
+#button{
+  background-color: black;
+  color: white;
+  padding: 2% 5% 2% 5%;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 5%;
+  cursor: pointer;
+}*/
+
+#imagee{
+  width: 400px;
+  /* position: relative; */ 
+}
+
+/* --- CONNEXION --- */
+
+.Connex {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  width: 100%;
+  height: 700px;
+  flex-grow:1;
+  margin: 30px 0;
+}
+
+/*#connexion{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}*/
+
+#mdp {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#mdp::before {
+  animation:none;
+  background: none;
+}
+
+.connexionbtn{
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+#noaccount {
+  background-color : var(--white);
+  width: 100%;
+  color: var(--blue);
+}
+
+#noaccount:hover{
+  background-color: var(--blue);
+  border: 1px solid var(--white);
+  color: var(--white)
+}
+
+#pasdecompte {
+  margin-bottom: 0;
+}
+
+#img_conx{
+  width: 400px;
+  height: 425px;
+  margin: 40px;
+}
+
+@media screen and (max-width : 1100px) {
+
+ #img_conx{
+  display: none;
+  }
+}
+
+/* --- ANNONCES ---  */
+
+h1{
+  font-size: 200%;
   color: var(--burgrundy);
   text-align: center;
 }
 
-
-
-h2{
-  color: black;
-  margin: 0 0 0 30px;
+#description{
+  height: 100px;
 }
 
-h3{
-  color: var(--red);
+/* Bordered form */
+
+
+.option{
+  margin: 15px;
 }
 
-/* MENU */
+form {
+  text-align: center;
+  margin: 50px;
+  width: var(--width);
+  height: 350px;
+  padding: 30px;
+  border: 1px solid var(--white);
+  background: var(--white);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
 
-nav{
+#container h1{
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+
+
+/* --- COMPTE --- */
+
+.compte{
   width: 100%;
-  padding: 10px;
-  margin: 10px;
-  top:50px;
-  text-align:center;
+  height: 500px;
 }
 
-nav a{
-  font-weight:500;
-  text-transform:uppercase;
-  text-decoration:none;
-  color:var(--burgrundy);
-  margin:0 15px;
-  font-size:110%;
-  letter-spacing:1px;
+/* ARTICLE */
 
-}
-nav a:before{
-  content:'';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background:var(--burgrundy);
-  top:47%;
-  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-}
-nav a:hover:before{
-  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-
+.compteur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-nav li {
-  list-style: none;
-  position:relative;
-  display:inline-block;
+.countdown{
+  width: 40%;
+  height: 100px;
+}
+
+.annonces h3{
+  padding: 20px;
+  text-align: center;
+}
+
+.annonces{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--burgrundy);
+  margin: 10%;
+  height: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/*.slide{
+  width: 500%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}*/
+
+.annonce1, .annonce p, h5{
+  font-size: 30px;
+}
+
+/*.annonce {
+  width: 20%;
+  transition: 2s;
   
 }
-@keyframes in{
-  0%{
-    width: 0;
-    left:0;
-    right:auto;
-  }
-  100%{
-    left:0;
-    right:auto;
-    width: 100%;
-  }
-}
-@keyframes out{
-  0%{
-    width:100%;
-    left: auto;
-    right: 0;
-  }
-  100%{
-    width: 0;
-    left: auto;
-    right: 0;
-  }
-}
-@keyframes show{
-  0%{
-    opacity:0;
-    transform:translateY(-10px);
-  }
-  100%{
-    opacity:1;
-    transform:translateY(0);
-  }
+/*
+.boutons{
+  display: none;
 }
 
-nav label
-{
-    display: none;
-}
-nav label, #toggle
-{
-    display: none;
-}
-
-@media all and (max-width: 768px)
-{
-  nav
-    {
-      height: 60px;
-    }
-
-    nav .menu 
-    {
-      display: none;
-      flex-direction: column;
-      background: var(--back);
-      padding: 15px;        
-    }
- 
-    nav .menu a {
-      width: 50%;
-      list-style-type: none;
-    }
- 
-    nav label 
-    {
-      width: 60px;
-      display: flex;
-      flex-direction: row; 
-      justify-content: right;
-      margin: 0 auto;
-      font-size: 40px;
-      color: var(--burgrundy);
-      cursor: pointer;
-    }
-
-    #toggle:checked + .menu {
-      display: flex;
-      position: relative;
-      gap: 20px;
-    }
-}
-
-@media screen and (max-width : 480px) {
-
- .titre-accueil h1{
-    font-size: 200%;
-  }
-}
-
-
-
-
-/* FOOTER */
-
-.footer{
-  background: #232222;
-  width: 100%; 
-  padding: 20px 0;
-  margin-top: 30px;
-  /*position: absolute; */
-  position: static; /*B*/
-  bottom: auto; /*B*/
-}
-
-.footer-container {
+.bouton{
+  position: absolute;
+  width: 100%;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
-  color:white;
+  justify-content: center;
+  align-items: flex-end;
+}
+*/
+
+.idee{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
-.footer-center{
-  /* margin: auto 120px; */
-  padding: auto;
-  color:white;
-}
-
-
-.footer span{
-  margin-right: 1rem;
-}
-
-.footer-center a:link,
-.footer-center a:visited{
-  display: block;
-  color: white;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-.footer-center a:hover{
-  color: red;
-}
-
-.footer-center h3{
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
-/* DEBUT DU COPYRIGHT */
-
-.copyright{
+.idee a{
+  color :var(--blue);
+  font-weight: bold;
+  text-decoration: none;
   font-size: 12px;
-  font-weight: 400;
+}
+
+.idee a:hover{
+  color :#293241;
+}
+
+
+/* COUNTDOWN */
+
+.countdown{
+  display: block;
+  margin: 20px;
+  border-radius:10px;
+
+}
+
+/* STYLE DU BOUTON DE PROPOSITION */
+
+.btn{
+  position: relative;
+  background-color: var(--white);
+  display: inline-block;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0.5rem 1rem var(--burgrundy);
+  margin-top: 4rem;
+  height: auto;
+  width: auto;
   text-align: center;
-  padding: 4rem 0 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* SLIDER */
+
+/* Slideshow container */
+.slide {
+  position: relative;
+  background: var(--burgrundy);
+}
+
+/* Slides */
+.annonce {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #712E1E;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FFBC97;
   color: white;
 }
 
-/* FIN DU COPYRIGHT */
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #FFBC97;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #712E1E;
+}

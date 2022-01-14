@@ -1,19 +1,29 @@
-<div class="titre">
-    <h1>Contact</h1>
-</div>
+
+<strong><h1> CONTACT</h1></strong>
+
   <div class = "contact">
-    <div id="form">
+    <form>
       <input type="text" placeholder="Nom*"><br>
       <input type="text" placeholder="Prénom*" ><br>
       <input type="text" placeholder="E-mail*"><br>
-      <select name="choix">
-        <option value="mtf">--Choisissez un motif--</option>
-        <option value="cpt">Demande de compte</option>
-        <option value="pb">Problème technique</option>
-      </select><br>  
+
+     <input type="radio" id="dmd" name="choix" onclick="choice()">Demande de compte
+     <input type="radio" id="pblm" name="choix" onclick="choice()">Probème technique<br/>
+            
+      <div id="compte" style="display: none;">
+        <select>
+        <option value="mtf">--Choisissez un role--</option>
+        <option value="cpt">Organisateur</option>
+        <option value="pb">Donateur</option>
+      </select>
+      <br>
+      </div>
+    <div id="probleme" style="display= none;">
       <input type="text"  placeholder="message"><br>
-      <input type="submit" id="button" value="envoyer">
-    </div>
+      </div>
+      
+      <input type="submit" value="Envoyer">
+    </form>
     <div>
       <img src="view/img/image_contact.png" id="imagee">
     </div>

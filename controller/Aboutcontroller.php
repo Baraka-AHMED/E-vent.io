@@ -4,9 +4,7 @@ final class Aboutcontroller
 {
     public function InfoAction()
     {
-        Vue::montrer('accueil/about');
+      Vue::montrer('accueil/about');
     }
-
-
 
 }

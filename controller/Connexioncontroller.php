@@ -17,8 +17,8 @@ final class Connexioncontroller {
     }
     else
     {
-      $erreurs = array("Id
-      entifiant ou mot de passe incorrect", "Vous n'avez pas de compte");
+      echo'Identifiant ou mot de passe incorrect, Vous n\'avez pas de compte';
+      
       Vue::montrer('users/sign-in');
     }
   }

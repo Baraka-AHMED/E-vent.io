@@ -5,45 +5,44 @@ final class Usercontroller
   
     public function SigninAction()
     {
-        Vue::montrer('users/sign-in');/* array('connexion' =>  $O_connexion->Connexion()));*/
+        Vue::montrer('users/sign-in');
         
      
     }
-     
+    public function __construct(){
+    $this->O_connexion = new Connexion();
+    $this->O_deconnexion =new Deconnexion();
+  }
 
-    public function ConnexionAction()
+  public function ConnexionAction(){
+    $result = $this->O_connexion->getlogin();    
+    if($result == 'login')
     {
-      Vue::montrer('accueil/contact');
-        if(!empty($_POST)) {
-            
-            Vue::montrer('accueil/contact');
-            
-            /*
-            require_once 'view/users/sign-in.php';
-            require_once 'noyau/Model.php';
+      Vue::montrer('accueil/homepage');
+    }
+    else
+    {
+      echo'Identifiant ou mot de passe incorrect, Vous n\'avez pas de compte';
+      
+      Vue::montrer('users/sign-in');
+    }
+  }
 
-            session_start();
-          
-            $req = $pdo -> prepare('SELECT * FROM users WHERE username = :username');
-            $req->execute(['username' => $_POST['username']]);
-          
-            $user = $req->fetch();
-          
-            if(strcmp($_POST['password'], $user->password) == 0) {
-              $_SESSION['auth'] = $user;
-              $_SESSION['role'] = $user->role;
-              }
-            else{
-              $erreurs = array("Identifiant ou mot de passe incorrect", "Vous n'avez pas de compte");
-            }
-            echo 'vous êtes connectez';
-            var_dump($dbLink);*/
-        }  
-
-    
-
+  public function SessionAction(){
+    if(session_status() == PHP_SESSION_NONE){
+      session_start(); 
+    }
+  }
+  
+    public function LogoutAction()
+    {
+      $this->O_deconnexion->logout();
+      $_SESSION['flash']['sucess'] = "Vous avez été déconnecté";
+      Vue::montrer('users/sign-in');
+        
     }
 }
+    
 
 
 

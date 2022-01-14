@@ -1,7 +1,7 @@
 
 
 <div class="compte">
-  <p>Bonjour <b><?= $_SESSION['auth']->username; ?></b></p>
+  <p>Bonjour <b><?= Comptecontroller::getUserAction('username'); ?></b></p>
 
   <p>Mes informations : </p>
   <li>e-mail : <?= $_SESSION['auth']->email; ?></li>
