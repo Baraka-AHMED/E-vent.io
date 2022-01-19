@@ -1,22 +1,11 @@
-
 <?php
-class Bd extends PDO {
-  private static $instance;
-  private function __construct (){
-    try{
-$pdo = new PDO('mysql:dbname=eeventio_db; host=mysql-eeventio.alwaysdata.net', 'eeventio', 'projetweb13');
-$pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$pdo -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-    }
-    catch(PDOException $excep){
-      die($excep->getMessage());
-    }
+
+final class Modelbis
+{
+  public function generstr($number = 6){
+  $carac = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN";
+  $password = substr(str_shuffle(str_repeat($carac, 5)), 0, 7);
+  return $password; 
   }
-public static function getinstance(){
-  if (self::$instance === null){
-  self::$instance =new $instance;
-  }
-  else return self::$instance();
-}
 }
 ?>

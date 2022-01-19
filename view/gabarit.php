@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>E-Event.IO!</title>
+    <link rel="icon" href="/view/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;800&display=swap" rel="stylesheet">
@@ -12,13 +13,9 @@
     <link href="view\css\style.css" rel="stylesheet" type="text/css"/>
     <script src="/view/js/script.js"></script>
   </head>
-
-    <body>
-        <?php 
-        
-        
-        Vue::montrer('standard/header'); ?>
-        <?php echo $A_vue['body']; ?>
-        <?php Vue::montrer('standard/footer'); ?>
-    </body>
+  <body>
+    <?php Vue::montrer('standard/header'); ?>
+    <?php echo $A_vue['body']; ?>
+    <?php Vue::montrer('standard/footer'); ?>
+  </body>
 </html>

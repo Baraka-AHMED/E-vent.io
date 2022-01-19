@@ -26,6 +26,7 @@
       <form action="" method="POST">
         <h2>Entrez votre mail pour reinitialiser votre mot de passe</h2>
         <input type="email" placeholder="Entrer votre mail" name="mail" required>
+        <a><input type="submit"  name="action" value='Valider'></a>
       </form>
     </nav>
   

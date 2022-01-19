@@ -1,1 +1,0 @@
-<a href="index.php?ctrl=deconnexion&action=logout"><a/>

@@ -2,19 +2,21 @@
 <strong><h1> CONTACT</h1></strong>
 
   <div class = "contact">
-    <form>
-      <input type="text" placeholder="Nom*"><br>
-      <input type="text" placeholder="Prénom*" ><br>
-      <input type="text" placeholder="E-mail*"><br>
-
-     <input type="radio" id="dmd" name="choix" onclick="choice()">Demande de compte
-     <input type="radio" id="pblm" name="choix" onclick="choice()">Probème technique<br/>
-            
+    <h4>Vous souhaitez nous contacter? Remplissez ce formulaire !</h4>
+    <form action="index.php?ctrl=homepage&action=post" method="post">
+      <input type="text" name="surname" placeholder="Nom*"><br>
+      <input type="text" name="firstname" placeholder="Prénom*" ><br>
+      <input type="text" name="email"placeholder="E-mail*"><br>
+      <div class="btnContact">
+        <span><input type="radio" id="dmd" name="choix" onclick="choice()" value="Dmdcmpt">Demande de compte</input></span>
+        <span><input type="radio" id="pblm" name="choix" onclick="choice()">Problème technique</input></span>
+      </div>
       <div id="compte" style="display: none;">
         <select>
         <option value="mtf">--Choisissez un role--</option>
-        <option value="cpt">Organisateur</option>
-        <option value="pb">Donateur</option>
+        <option name="role"value="cpt">Organisateur</option>
+        <option name="role" value="pb">Donateur</option>
+        <option name="role" value="pb">Jury</option>
       </select>
       <br>
       </div>

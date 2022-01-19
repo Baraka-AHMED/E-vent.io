@@ -13,13 +13,13 @@
     </div>
   <?php endif; ?>
   
-    <form action="index.php?ctrl=connexion&action=connexion" method="POST">
+    <form action="index.php?ctrl=user&action=connexion" method="POST">
       <h2>Connectez-vous</h2>
       <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
       <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-      <a href="index.php?ctrl=mdpoublie&action=mdpoublie" id="mdp"> Mot de passe oublié ?</a>
-      <input type="submit"  name="action" value='Connexion'></a>
+      <a href="index.php?ctrl=user&action=mdpoublie" id="mdp"> Mot de passe oublié ?</a>
+      <input type="submit"  name="action" value='Connexion'>
       <p id="pasdecompte"> Vous n'avez pas de compte ? </p>
-      <a href="index.php?ctrl=contact&action=contact"><input type="button" id='noaccount' value='Faire une demande de compte'></a>
+      <a href="index.php?ctrl=homepage&action=contact"><input type="button" id='noaccount' value='Faire une demande de compte'></a>
     </form>
 </section>
